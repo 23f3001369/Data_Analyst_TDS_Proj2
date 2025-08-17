@@ -19,6 +19,7 @@ load_dotenv()
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 gemini_api = os.getenv("gemini_api")
 gemini_api_2 = os.getenv("gemini_api_2")
+gemini_api_3 = os.getenv("gemini_api_3")
 
 async def ping_gemini(question_text, relevant_context="", max_tries=3):
     tries = 0
